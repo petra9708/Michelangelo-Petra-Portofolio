@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michelangelo Petra Bittatar Togatorop – Portofolio</title>
+<meta name="description" content="Portofolio Michelangelo Petra Bittatar Togatorop, mahasiswa S1 Teknik Informatika Universitas Negeri Surabaya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F5FA; --ink:#17233F; --graphite:#566176; --line:#C9D2E3;
+  --cobalt:#2748D6; --mark:#FFE066; --white:#fff;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Figtree','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:4px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+
+/* nav */
+nav{padding:1.25rem 0}
+nav .wrap{display:flex;gap:1.5rem;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:500;color:var(--graphite);padding:.25rem 0;border-bottom:2px solid transparent}
+nav a:hover{color:var(--ink);border-color:var(--cobalt)}
+
+/* hero: nama di atas garis paranada */
+.hero{padding:4rem 0 5rem}
+.staff{
+  position:relative;padding:1.6rem 0;
+  background:
+    repeating-linear-gradient(to bottom,transparent 0,transparent calc(.9rem - 1px),var(--line) calc(.9rem - 1px),var(--line) .9rem);
+  background-size:100% 3.6rem;background-repeat:no-repeat;background-position:0 1.6rem;
+}
+h1{font:800 clamp(2.4rem,7.5vw,5rem)/1.02 var(--display);letter-spacing:-.025em;max-width:14ch;position:relative}
+.role{margin-top:2rem;font-size:1.2rem;color:var(--graphite);max-width:36rem}
+.role strong{color:var(--ink);font-weight:600;background:linear-gradient(transparent 60%,var(--mark) 60%)}
+
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+.portrait{display:block;width:14rem;height:auto;aspect-ratio:3/4;object-fit:cover;border:2px solid var(--ink);border-radius:14px 14px 14px 2px;background:var(--white)}
+
+/* sections */
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.7rem,4vw,2.4rem)/1.15 var(--display);letter-spacing:-.015em;margin-bottom:1.75rem}
+
+dl{display:grid;grid-template-columns:minmax(7rem,11rem) 1fr;gap:.9rem 1.5rem;max-width:40rem}
+dt{color:var(--graphite);font-weight:500}
+dd{font-weight:600}
+
+.skills{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.25rem}
+.skills li{background:var(--white);border:1.5px solid var(--ink);border-radius:14px 14px 14px 2px;padding:1.5rem}
+.skills h3{font:700 1.35rem/1.2 var(--display);margin-bottom:.4rem}
+.skills p{color:var(--graphite);font-size:1rem}
+
+.ach{list-style:none;padding:0;max-width:44rem}
+.ach li{display:grid;grid-template-columns:4.5rem 1fr;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.ach li:first-child{padding-top:0}
+.ach time{font:700 1.25rem var(--display);color:var(--cobalt)}
+.ach p{font-weight:500}
+
+.contact p{color:var(--graphite);margin-bottom:1.5rem}
+.btns{display:flex;flex-wrap:wrap;gap:.9rem}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.85rem 1.4rem;border-radius:999px;border:2px solid var(--ink);transition:background .2s,color .2s}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--cobalt);border-color:var(--cobalt)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+footer{padding:2rem 0 3rem;color:var(--graphite);font-size:.95rem;border-top:1px solid var(--line)}
+
+/* satu momen gerak: nama muncul saat halaman dibuka */
+@media (prefers-reduced-motion:no-preference){
+  h1{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+}
+@media (max-width:720px){
+  .hero-grid{grid-template-columns:1fr;gap:2rem}
+  .portrait{order:-1;width:9.5rem}
+}
+@media (max-width:560px){
+  dl{grid-template-columns:1fr;gap:.1rem}
+  dd{margin-bottom:.8rem}
+  .ach li{grid-template-columns:1fr;gap:.1rem}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Navigasi utama">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievement">Achievement</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="staff">
+          <h1>Michelangelo Petra Bittatar Togatorop</h1>
+        </div>
+        <p class="role">Saya adalah mahasiswa baru <strong>Teknik Informatika</strong> tahun 2026 di Universitas Negeri Surabaya, saya adalah pribadi yang suka melakukan dan mempelajari <strong>coding</strong>.</p>
+      </div>
+      <img class="portrait" src="foto-profil.jpg" width="640" height="948" alt="Foto profil Michelangelo Petra Bittatar Togatorop">
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <dl>
+        <dt>Nama</dt><dd>Michelangelo Petra Bittatar Togatorop</dd>
+        <dt>Program studi</dt><dd>S1 Teknik Informatika</dd>
+        <dt>Kampus</dt><dd>Universitas Negeri Surabaya (Semester 1)</dd>
+        <dt>NIM</dt><dd>26051204264</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>What can I do</h2>
+      <ul class="skills">
+        <li><h3>Menggambar</h3><p>Mahir menggambar.</p></li>
+        <li><h3>Bermain musik</h3><p>Mahir bermain musik.</p></li>
+        <li><h3>Coding</h3><p>Mampu menulis kode.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="achievement">
+    <div class="wrap">
+      <h2>Achievement</h2>
+      <ul class="ach">
+        <li><time datetime="2025">2025</time><p>Medali emas Olimpiade Kimia oleh Dignity Olympiad</p></li>
+        <li><time datetime="2025">2025</time><p>Terpilih sebagai perwakilan sekolah dalam OSN Kimia</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Ingin berkenalan atau berkolaborasi? Hubungi saya lewat:</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:micheltogatorop@gmail.com">micheltogatorop@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/michelangelo-petra-bittatar-togatorop-9640562a4?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y">2026</span> Michelangelo Petra Bittatar Togatorop</div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
